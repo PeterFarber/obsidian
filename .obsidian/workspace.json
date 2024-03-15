@@ -4,38 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "a2c68038891ae595",
+        "id": "04022dacaf2b7d7a",
         "type": "tabs",
         "children": [
           {
-            "id": "cd3b7ed97d2aad69",
+            "id": "c14eda665119ee5f",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Flow.canvas",
                 "viewState": {
-                  "x": -241.41646465416642,
-                  "y": -2025.9998198651865,
-                  "zoom": -0.09780982500376412
+                  "x": -1543,
+                  "y": -3357,
+                  "zoom": 0
                 }
               }
             }
-          },
-          {
-            "id": "4af042c2023a1e8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -64,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#SiteProcess",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Flow.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Flow.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Flow.canvas"
               }
             }
           }
@@ -162,9 +149,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4af042c2023a1e8f",
+  "active": "c14eda665119ee5f",
   "lastOpenFiles": [
+    "Processes/Gateway.md",
+    "Processes/Mapper.md",
+    "Processes/Site.md",
+    "Flow.canvas",
+    "Old.canvas",
+    "Untitled.md",
+    "Processes/DataStore.md",
+    "2024-03-15.md",
+    "Processes",
     "README.md",
-    "Flow.canvas"
+    "Untitled.canvas"
   ]
 }

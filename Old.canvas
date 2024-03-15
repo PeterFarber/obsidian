@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"3c582248d212070b","type":"group","x":-1240,"y":-2760,"width":540,"height":420,"color":"#529cca","label":"Gateway Process"},
+		{"id":"268318e69c3160dd","type":"group","x":-1820,"y":-2760,"width":540,"height":420,"color":"#ff7369","label":"Site Process"},
+		{"id":"6296d8cab726d938","type":"group","x":-1240,"y":-2235,"width":540,"height":395,"color":"#ffdc49","label":"Mapper Process"},
+		{"id":"f5e72fb8490d742d","type":"group","x":-1820,"y":-2235,"width":540,"height":225,"color":"#ffa344","label":"DataStore Process"},
+		{"id":"698577d74fb713a8","type":"text","text":"##### <span class=\"yellow\">:LiVariable:</span> <span class='yellow'>DataStores</span>: <span class='red'>Array</span>\\<<span class='green'>DataStore</span>>\n","x":-1800,"y":-2740,"width":500,"height":50,"color":"3"},
+		{"id":"6aa4f1594502b704","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">AddEntry</span>\n","x":-1800,"y":-2670,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"62b78f1d476c11c7","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">GetEntries</span>\n","x":-1800,"y":-2600,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"798d6a6abf1642e7","type":"text","text":"#Site\nThe <span class=\"blue\">**Gateway Process**</span> is responsible for returning a <span class=\"yellow\">**Mapper Process**</span> id. \nAn application having the <span class=\"yellow\">**Mapper Process**</span> id can than call that <span class=\"yellow\">**Mapper Process**</span> which will return a site process id.","x":-1800,"y":-2525,"width":500,"height":155},
+		{"id":"32084860a811c681","type":"text","text":"##### <span class=\"yellow\">:LiVariable:</span> <span class='yellow'>Mappers</span>: <span class='red'>Map</span>\\<<span class='green'>Bucket</span>, <span class='green'>Mapper</span>>\n","x":-1220,"y":-2740,"width":500,"height":50,"color":"3"},
+		{"id":"d46649218b73ffe2","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">GetMapper</span>\n","x":-1220,"y":-2670,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"36fd1eaa29f16c39","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">UrlToBucket</span>:<span class=\"green\">Helper</span>\n","x":-1220,"y":-2600,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"d3f6921ee2e2345b","type":"text","text":"##### <span class=\"yellow\">:LiVariable:</span> <span class='yellow'>Entries</span>: <span class='red'>Array</span>\\<<span class='green'>Entry</span>>\n","x":-1800,"y":-2215,"width":500,"height":50,"color":"3"},
+		{"id":"ad463426f11caf70","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">AddEntry</span>\n","x":-1800,"y":-2145,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"c0017f42fdbb296c","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">GetEntries</span>\n","x":-1800,"y":-2075,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"9fcb21bdcab584ad","type":"text","text":"#Gateway\nThe <span class=\"blue\">**Gateway Process**</span> is responsible for returning a <span class=\"yellow\">**Mapper Process**</span> id.  An application having the <span class=\"yellow\">**Mapper Process**</span> id can than call that <span class=\"yellow\">**Mapper Process**</span> which will return a site process id.","x":-1220,"y":-2525,"width":500,"height":155},
+		{"id":"e253dd2507292800","type":"text","text":"##### <span class=\"yellow\">:LiVariable:</span> <span class='yellow'>Sites</span>: <span class='red'>Map</span>\\<<span class='green'>URL</span>, <span class='green'>Site</span>>\n","x":-1220,"y":-2215,"width":500,"height":50,"color":"3"},
+		{"id":"d8c1fbc94175010c","type":"text","text":"##### <span class=\"blue\">:LiFunctionSquare:</span> <span class=\"blue\">GetSite</span>\n","x":-1220,"y":-2145,"width":500,"height":50,"color":"#086ddd"},
+		{"id":"1cc24f850b923683","type":"text","text":"#Mapper\nThe <span class=\"yellow\">**Mapper Process**</span> contains a list of URLs mapped to a corresponding site process. When Called it returns a reference to a <span class=\"red\">**Site Process**</span>.\nNow that the application has access to the site process we can now send store analytic entry by passing data to the corresponding <span class=\"red\">**Site Process**</span>.","x":-1220,"y":-2075,"width":500,"height":215}
+	],
+	"edges":[
+		{"id":"9d7f7eac571aa061","fromNode":"d46649218b73ffe2","fromSide":"bottom","toNode":"36fd1eaa29f16c39","toSide":"top"}
+	]
+}
