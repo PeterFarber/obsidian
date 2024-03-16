@@ -181,26 +181,73 @@ b:not(:last-child):after{
 
 .flow{
   --c: #000;
+  --o: #000;
   display:flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: none;
   top:0;
   left:0;
   z-index: 100;
   font-weight: 700;
   font-size: 22px;
   border-radius: 8px;
-  background: rgb(var(--c), 0.3) !important;
+
   border: 4px solid  rgb(var(--c), 4);
 }
 
+.flow.func{
+  --c: var(--color-blue-rgb);
+}
+
+.flow.user{
+  --c: var(--color-green-rgb);
+  color:var(--color-green) !important;
+}
+
+.flow.var{
+  --c: var(--color-yellow-rgb);
+}
+
+
+
+.flow .cm-iconize-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px !important;
+  width: 32px !important;
+  position: absolute;
+  left:0px;
+  top:0px;
+  padding:0px;
+  border-radius: 4px;
+  transform: translate(-2px, -2px) !important;
+  background: rgb(var(--c), 1) !important;
+
+}
+
+.flow .cm-iconize-icon svg{
+  color:black;
+  height: 32px !important;
+  width: 32px !important;
+}
+
+
+
+.flow .object{
+  color: rgb(var(--o), 1) !important;
+}
+
 .flow span{
+  width: 100%;
   flex: 1 1 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flow span.function{
@@ -209,33 +256,45 @@ b:not(:last-child):after{
 }
 
 
-.flow.b{
-  --c: var(--color-blue-rgb);
+.object.b{
+  --o: var(--color-blue-rgb);
 }
 
-.flow.r{
-  --c: var(--color-red-rgb);
+.object.r{
+  --o: var(--color-red-rgb);
 }
 
-.flow.g{
-  --c: var(--color-green-rgb);
+.object.g{
+  --o: var(--color-green-rgb);
 }
 
-.flow.p{
-  --c: var(--color-pink-rgb);
+.object.p{
+  --o: var(--color-pink-rgb);
 }
 
-.flow.y{
-  --c: var(--color-yellow-rgb);
+.object.y{
+  --o: var(--color-yellow-rgb);
 }
 
 
-.flow.o{
-  --c: var(--color-orange-rgb);
+.object.o{
+  --o: var(--color-orange-rgb);
 }
 
 .flow div{
-  flex: 0 0 6px;
-  height: 100%;
+  flex: 0 0 4px;
+  width: 100%;
   background: rgb(var(--c), 1) !important;
+}
+
+.markdown-embed-content {
+  overflow-y: auto;
+}
+
+.canvas-node-container:has(.flow){
+  border:0px !important;
+}
+
+.markdown-preview-view{
+  overflow-y:unset !important;
 }

@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "77a5b32a6f494136",
+        "id": "5b079686ce3f5085",
         "type": "tabs",
         "children": [
           {
-            "id": "f6369aae15ec8fc3",
+            "id": "5ad09a562b2f60f0",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Flow.canvas",
                 "viewState": {
-                  "x": -502,
-                  "y": -3275.109094375119,
-                  "zoom": -0.2740597756070792
+                  "x": -550,
+                  "y": -3397.5,
+                  "zoom": -0.21605417217151343
                 }
               }
             }
@@ -149,10 +149,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6369aae15ec8fc3",
+  "active": "5ad09a562b2f60f0",
   "lastOpenFiles": [
-    "Flow.canvas",
     "Processes/Site.md",
+    "Flow.canvas",
     "Archived/Old.canvas",
     "Archived",
     "README.md",
