@@ -10,7 +10,7 @@
 		<label>AddEntry</label>
 	</div>
 	<div class="box func">
-		<label>GetEntries</label>
+		<label>GetDataStores</label>
 	</div>
 
 The <a data-href="Site" href="Site" class="internal-link red" target="_blank" rel="noopener">Site</a> contains the core functionality of storing analytics. 

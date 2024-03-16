@@ -28,6 +28,15 @@
 .purple{ color: var(--color-purple)  !important; }
 .pink{ color: var(--color-pink)  !important; }
 
+.bred{ background: var(--color-red)  !important; }
+.borange{ background: var(--color-orange)  !important; }
+.byellow{ background: var(--color-yellow)  !important; }
+.bgreen{ background: var(--color-green)  !important; }
+.bcyan{ background: var(--color-cyan)  !important; }
+.bblue{ background: var(--color-blue) !important; }
+.bpurple{ background: var(--color-purple)  !important; }
+.bpink{ background: var(--color-pink)  !important; }
+
 .internal-link{
   font-weight: 700;
   text-decoration: none !important;
@@ -168,3 +177,65 @@ b:not(:last-child):after{
 .test::before {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hbGlnbi12ZXJ0aWNhbC1qdXN0aWZ5LXN0YXJ0Ij48cmVjdCB3aWR0aD0iMTQiIGhlaWdodD0iNiIgeD0iNSIgeT0iMTYiIHJ4PSIyIi8+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjYiIHg9IjciIHk9IjYiIHJ4PSIyIi8+PHBhdGggZD0iTTIgMmgyMCIvPjwvc3ZnPg==");
 } */
+
+
+.flow{
+  --c: #000;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  top:0;
+  left:0;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 8px;
+  background: rgb(var(--c), 0.3) !important;
+  border: 4px solid  rgb(var(--c), 4);
+}
+
+.flow span{
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.flow span.function{
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+.flow.b{
+  --c: var(--color-blue-rgb);
+}
+
+.flow.r{
+  --c: var(--color-red-rgb);
+}
+
+.flow.g{
+  --c: var(--color-green-rgb);
+}
+
+.flow.p{
+  --c: var(--color-pink-rgb);
+}
+
+.flow.y{
+  --c: var(--color-yellow-rgb);
+}
+
+
+.flow.o{
+  --c: var(--color-orange-rgb);
+}
+
+.flow div{
+  flex: 0 0 6px;
+  height: 100%;
+  background: rgb(var(--c), 1) !important;
+}
